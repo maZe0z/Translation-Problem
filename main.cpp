@@ -4,10 +4,15 @@
 using namespace std;
 
 int main(){
-    double x;
-    cin >> x;
-    if (1<x<10){
-        cout << "pizda";
+    int count = 0;
+    string str_correct, str_checked;
+    cin >> str_correct >> str_checked;
+    reverse(str_checked.begin(),str_checked.end());
+    if (str_checked==str_correct){
+        cout << "YES";
+    }
+    else {
+        cout << "NO";
     }
     return 0;
 }
